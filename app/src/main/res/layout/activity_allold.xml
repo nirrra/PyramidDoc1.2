@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/menu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="#ceedf8"
+            android:onClick="back_click"
+            app:srcCompat="@drawable/previous2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/blue"
+            android:gravity="center"
+            android:text="所有老人      "
+            android:textColor="#000000"
+            android:textSize="20dp"/> />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:id="@+id/tjlr"
+        android:text="添加老人"
+        android:textSize="20dp"
+        android:background="@drawable/button_quxiao"
+        android:onClick="tjlr_click"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wdy.pyramiddoc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LogActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".JinriActivity" />
+        <activity android:name=".XinxiActivity" />
+        <activity android:name=".Xinxi2Activity" />
+        <activity android:name=".YizhuActivity" />
+        <activity android:name=".Yizhu2Activity" />
+        <activity android:name=".GuowangActivity" />
+        <activity android:name=".chakanyuyue.chakanyuyue"/>
+        <activity android:name=".chakanyuyue.quxiaoyuyue"/>
+
+
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OldinfoActivity" />
+        <activity android:name=".OldInfoXiugaiActivity" />
+        <activity android:name=".AlloldActivity"></activity>
+    </application>
+
+</manifest>

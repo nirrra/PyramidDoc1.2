@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/menu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="#ceedf8"
+            android:onClick="back_click"
+            app:srcCompat="@drawable/previous2" />
+
+        <TextView
+            android:text="添加老人      "
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/blue"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:text="姓名："
+            android:textSize="18dp"/>
+
+        <EditText
+            android:id="@+id/newName"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:text="身份证号："
+            android:textSize="18dp"
+
+            />
+
+        <EditText
+            android:id="@+id/newID"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="性别："
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/newSex"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="床号："
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/newBed_num"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="身高："
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/newHeight"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="体重："
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/newWeight"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="出生年份："
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/newBorn_year"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="负责医生："
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/newDoctor"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="负责护工："
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/newCarer"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="联系方式1："
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/newTel1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="联系方式2："
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/newTel2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="风险等级："
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/newRisk_level"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="风险因素："
+            android:textColor="#000000"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            />
+
+        <EditText
+            android:id="@+id/newRisk_factor"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/guowangxinxi"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="提交信息"
+        android:textSize="20dp"
+        android:onClick="tjxx_click"
+        android:background="@drawable/button_queding"/>
+</LinearLayout>
